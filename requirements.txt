@@ -1,0 +1,13 @@
+streamlit
+pandas
+prophet
+matplotlib
+scikit-learn
+optuna
+xgboost
+numpy
+statsmodels
+joblib
+openpyxl
+plotly
+tensorflow

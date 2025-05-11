@@ -1,0 +1,176 @@
+/* Styles personnalisés pour l'application TresoreriePro */
+
+/* Styles globaux */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50;
+    background-color: #f8f9fa;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+/* Titre principal */
+.main-title {
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+/* Cartes pour les sections */
+.stCard {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Boutons */
+.stButton > button {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #1e3a8a;
+}
+
+/* Sliders */
+.stSlider > div > div {
+    color: #3b82f6;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 3rem;
+    white-space: pre-wrap;
+    border-radius: 4px 4px 0 0;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    font-weight: 500;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #3b82f6 !important;
+    color: white !important;
+}
+
+/* Métriques */
+[data-testid="stMetricValue"] {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3b82f6;
+}
+
+[data-testid="stMetricDelta"] {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #f1f5f9;
+    border-right: 1px solid #e5e7eb;
+}
+
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Checkbox */
+[data-testid="stCheckbox"] {
+    padding: 0.5rem 0;
+}
+
+/* Radio buttons */
+[data-testid="stRadio"] > div {
+    padding: 0.5rem 0;
+}
+
+/* Dataframe */
+.dataframe-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stDataFrame {
+    border: none !important;
+}
+
+/* Recommandations */
+.recommendation-positive {
+    background-color: #ecfdf5;
+    border-left: 4px solid #10b981;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin: 0.75rem 0;
+}
+
+.recommendation-warning {
+    background-color: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin: 0.75rem 0;
+}
+
+.recommendation-negative {
+    background-color: #fef2f2;
+    border-left: 4px solid #ef4444;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin: 0.75rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 2rem;
+}
+
+/* Animations pour les graphiques */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.plotly-chart {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Loader personnalisé */
+.stSpinner > div {
+    border-color: #3b82f6 !important;
+}
