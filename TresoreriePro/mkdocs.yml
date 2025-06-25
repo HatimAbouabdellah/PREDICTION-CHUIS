@@ -1,0 +1,122 @@
+site_name: TresoreriePro
+site_url: https://votre-utilisateur.github.io/tresorerie-pro/
+site_author: Votre Nom
+site_description: "Application professionnelle de prévision de trésorerie"
+
+# Thème de la documentation
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - navigation.tracking
+    - toc.follow
+    - toc.integrate
+    - content.code.annotate
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode clair
+
+# Personnalisation
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/votre-utilisateur/tresorerie-pro
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/votrecompte
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: true
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigation
+nav:
+  - Accueil: index.md
+  - Guide d'installation: installation.md
+  - Guide d'utilisation: usage.md
+  - Référence de l'API:
+    - API: api/index.md
+    - Modèles: api/models.md
+    - Utilitaires: api/utils.md
+  - Développement:
+    - Contribution: development/contributing.md
+    - Tests: development/testing.md
+    - Déploiement: development/deployment.md
+  - FAQ: faq.md
+  - À propos: about.md
+
+# Personnalisation du pied de page
+copyright: "Copyright &copy; 2024 Votre Nom"
+
+# Plugins
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_root_heading: true
+            show_source: true
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
+# Personnalisation des couleurs
+extra_css:
+  - css/extra.css
+
+# Personnalisation du JavaScript
+extra_javascript:
+  - js/extra.js
+
+# Configuration du générateur de site statique
+strict: true
+use_directory_urls: true
+
+# Configuration pour le déploiement
+repo_url: https://github.com/votre-utilisateur/tresorerie-pro/
+edit_uri: edit/main/docs/

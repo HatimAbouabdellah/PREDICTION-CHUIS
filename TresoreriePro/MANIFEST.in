@@ -1,0 +1,171 @@
+include LICENSE
+include README.md
+include requirements.txt
+include requirements-dev.txt
+include .pre-commit-config.yaml
+include pytest.ini
+include mkdocs.yml
+include .env.example
+include streamlit_config.toml
+
+# Inclure les fichiers de documentation
+recursive-include docs *
+recursive-include examples *
+
+# Inclure les fichiers de données
+global-include *.json
+
+# Inclure les fichiers de modèles
+global-include *.pkl
+
+# Exclure les fichiers de cache et les dossiers de développement
+global-exclude __pycache__
+global-exclude *.py[cod]
+prune .pytest_cache
+prune .mypy_cache
+prune .tox
+prune build
+prune dist
+prune *.egg-info
+
+# Inclure les fichiers de tests
+recursive-include tests *
+
+# Inclure les fichiers de configuration
+global-include *.yaml
+global-include *.yml
+global-include *.toml
+
+# Inclure les fichiers de configuration pour le déploiement
+include Dockerfile
+include docker-compose.yml
+include .dockerignore
+
+# Inclure les fichiers de configuration CI/CD
+recursive-include .github *
+
+# Inclure les fichiers de configuration d'IDE
+global-include .vscode/*
+
+# Inclure les fichiers de configuration pour la documentation
+recursive-include docs_src *
+
+# Inclure les fichiers de configuration pour les tests de charge
+recursive-include load_tests *
+
+# Inclure les fichiers de configuration pour les benchmarks
+recursive-include benchmarks *
+
+# Inclure les fichiers de configuration pour les exemples
+recursive-include examples *
+
+# Inclure les fichiers de configuration pour les outils de développement
+recursive-include tools *
+
+# Inclure les fichiers de configuration pour les hooks git
+recursive-include .githooks *
+
+# Inclure les fichiers de configuration pour les environnements virtuels
+include .python-version
+
+# Inclure les fichiers de configuration pour les environnements conda
+include environment*.yml
+
+# Inclure les fichiers de configuration pour les environnements pipenv
+include Pipfile
+include Pipfile.lock
+
+# Inclure les fichiers de configuration pour les environnements poetry
+include pyproject.toml
+include poetry.lock
+
+# Inclure les fichiers de configuration pour les environnements pip-tools
+include requirements.in
+include requirements.txt
+include dev-requirements.in
+include dev-requirements.txt
+
+# Inclure les fichiers de configuration pour les environnements pipenv
+include setup.py
+include setup.cfg
+include MANIFEST.in
+
+# Inclure les fichiers de configuration pour les environnements conda
+include meta.yaml
+
+# Inclure les fichiers de configuration pour les environnements docker
+include docker-compose*.yml
+include .dockerignore
+
+# Inclure les fichiers de configuration pour les environnements kubernetes
+recursive-include k8s *
+
+# Inclure les fichiers de configuration pour les environnements cloud
+recursive-include cloud *
+
+# Inclure les fichiers de configuration pour les environnements de test
+recursive-include test_environment *
+
+# Inclure les fichiers de configuration pour les environnements de développement
+recursive-include dev_environment *
+
+# Inclure les fichiers de configuration pour les environnements de production
+recursive-include prod_environment *
+
+# Inclure les fichiers de configuration pour les environnements de staging
+recursive-include staging_environment *
+
+# Inclure les fichiers de configuration pour les environnements de démonstration
+recursive-include demo_environment *
+
+# Inclure les fichiers de configuration pour les environnements de formation
+recursive-include training_environment *
+
+# Inclure les fichiers de configuration pour les environnements de développement
+recursive-include development_environment *
+
+# Inclure les fichiers de configuration pour les environnements de test
+recursive-include testing_environment *
+
+# Inclure les fichiers de configuration pour les environnements de production
+recursive-include production_environment *
+
+# Inclure les fichiers de configuration pour les environnements de staging
+recursive-include staging_environment *
+
+# Inclure les fichiers de configuration pour les environnements de démonstration
+recursive-include demo_environment *
+
+# Inclure les fichiers de configuration pour les environnements de formation
+recursive-include training_environment *
+
+# Inclure les fichiers de configuration pour les environnements de développement
+recursive-include development_environment *
+
+# Inclure les fichiers de configuration pour les environnements de test
+recursive-include testing_environment *
+
+# Inclure les fichiers de configuration pour les environnements de production
+recursive-include production_environment *
+
+# Inclure les fichiers de configuration pour les environnements de staging
+recursive-include staging_environment *
+
+# Inclure les fichiers de configuration pour les environnements de démonstration
+recursive-include demo_environment *
+
+# Inclure les fichiers de configuration pour les environnements de formation
+recursive-include training_environment *
+
+# Inclure les fichiers de configuration pour les environnements de développement
+recursive-include development_environment *
+# Inclure les fichiers de configuration pour les environnements de test
+recursive-include testing_environment *
+# Inclure les fichiers de configuration pour les environnements de production
+recursive-include production_environment *
+# Inclure les fichiers de configuration pour les environnements de staging
+recursive-include staging_environment *
+# Inclure les fichiers de configuration pour les environnements de démonstration
+recursive-include demo_environment *
+# Inclure les fichiers de configuration pour les environnements de formation
+recursive-include training_environment *

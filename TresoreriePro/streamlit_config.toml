@@ -1,0 +1,44 @@
+[theme]
+primaryColor = "#4f8bf9"
+backgroundColor = "#f0f2f6"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#31333f"
+font = "sans serif"
+
+[server]
+port = 8501
+headless = true
+enableCORS = false
+enableWebsocketCompression = true
+
+[browser]
+serverAddress = "localhost"
+serverPort = 8501
+
+[runner]
+# Activer la mise en cache pour améliorer les performances
+magicEnabled = true
+installTracer = false
+showWarningOnDirectExecution = true
+
+[client]
+# Désactiver la collecte de métriques
+gatherUsageStats = false
+
+[scheduler]
+# Désactiver la planification des tâches en arrière-plan
+heartbeatEnabled = false
+
+[global]
+# Désactiver les avertissements de dépréciation
+suppressDeprecationWarnings = true
+
+# Configuration du cache
+[cache]
+# Taille maximale du cache en octets
+maxEntries = 1000
+
+# Configuration des logs
+[logger]
+level = "warning"
+messageFormat = "%(asctime)s %(levelname) -10s %(message)s"

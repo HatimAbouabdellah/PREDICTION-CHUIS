@@ -1,0 +1,121 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tresorerie-pro"
+version = "0.1.0"
+description = "Application professionnelle de prévision de trésorerie"
+readme = "README.md"
+authors = [
+    { name = "Votre Nom", email = "votre.email@example.com" },
+]
+license = { text = "MIT" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "streamlit>=1.32.0",
+    "pandas>=2.0.0,<3.0.0",
+    "prophet>=1.1.5",
+    "matplotlib>=3.7.0",
+    "scikit-learn>=1.3.0",
+    "optuna>=3.3.0",
+    "xgboost>=2.0.0",
+    "numpy>=1.24.0,<2.0.0",
+    "statsmodels>=0.14.0",
+    "joblib>=1.3.0",
+    "plotly>=5.15.0",
+    "tqdm>=4.65.0",
+    "python-dateutil>=2.8.2",
+    "pytz>=2022.7.1",
+    "openpyxl>=3.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.3.0",
+    "flake8>=6.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+    "pylint>=2.17.0",
+    "pytest>=7.3.1",
+    "pytest-cov>=4.0.0",
+    "pre-commit>=3.2.2",
+    "sphinx>=6.1.3",
+    "sphinx-rtd-theme>=1.2.0",
+    "sphinx-autodoc-typehints>=1.23.0",
+]
+test = [
+    "pytest>=7.3.1",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.10.0",
+    "pytest-xdist>=3.2.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/votre-utilisateur/tresorerie-pro"
+Bug Tracker = "https://github.com/votre-utilisateur/tresorerie-pro/issues"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 88
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=./ --cov-report=term-missing --cov-report=html"
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+source = ["tresorerie_pro"]
+omit = ["*/tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+    "raise ImportError",
+    "from importlib import import_module",
+]
+
+[metadata]
+license_files = ["LICENSE"]
