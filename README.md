@@ -25,7 +25,7 @@ TresoreriePro est une application web interactive développée avec Streamlit, c
 ### Installation
 1. Clonez le dépôt :
 ```bash
-git clone https://github.com/votre-utilisateur/tresorerie-pro.git
+git clone https://github.com/HatimAbouabdellah/tresorerie-pro.git
 cd tresorerie-pro
 ```
 
@@ -65,7 +65,7 @@ L'application attend un fichier Excel contenant deux feuilles spécifiques :
 
 1. **Feuille des flux** :
    - Colonne des dates
-   - Colonnes d'encours
+   - Colonnes d'encaissements
    - Colonnes de décaissements
 
 2. **Feuille TGR** :
@@ -81,8 +81,7 @@ Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à
 ## 📧 Contact
 Pour toute question ou suggestion, veuillez ouvrir une issue sur le dépôt GitHub.
 
-## Auteur
-Développé par l'équipe Outils_Prediction
+
 
 ## Licence
 Tous droits réservés
