@@ -5,7 +5,7 @@ matplotlib>=3.7.0
 scikit-learn>=1.3.0
 optuna>=3.3.0
 xgboost>=2.0.0
-numpy>=1.24.0,<2.0.0
+numpy<2.0.0,>=1.24.0
 statsmodels>=0.14.0
 joblib>=1.3.0
 plotly>=5.15.0
@@ -19,4 +19,4 @@ korean-lunar-calendar>=0.2.1
 hijri-converter>=2.2.4
 openpyxl
 plotly
-tensorflow
+tensorflow>=2.15.0,<2.16.0
